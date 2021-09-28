@@ -1,4 +1,4 @@
-import calcularTotal from "./App";
+import calcularTotalConEstado from "./App";
 
 const quantity = document.querySelector("#quantity-number");
 const price = document.querySelector("#price-number");
@@ -13,5 +13,5 @@ form.addEventListener("submit", (event) => {
   const precio = Number.parseInt(price.value);
   const estado = state.value;
 
-  div.innerHTML = "<p>" + calcularTotal(cantidad, precio) + "</p>";
+  div.innerHTML = "<p>" + calcularTotalConEstado(cantidad, precio, estado) + "</p>";
 });
