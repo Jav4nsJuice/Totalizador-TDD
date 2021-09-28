@@ -20,7 +20,10 @@ import multiplicar from "./App.js";
 //   });
 // });
 describe("Calcular Total", () =>{
-  it("deberia darnos el total", () => {
+  it("deberia darnos el total incorrecto", () => {
     expect(calcularTotal(3, 8)).toEqual(2);
+  });
+  it("deberia darnos el total correcto", () => {
+    expect(calcularTotal(3, 8)).toEqual(24);
   });
 });
