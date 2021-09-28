@@ -1,6 +1,7 @@
 // import sumar from "./App.js";
-import calcularTotal from "./App.js";
-import multiplicar from "./App.js";
+import calcularTotalConEstado from "./App.js";
+// import calcularTotal from "./App.js";
+// import multiplicar from "./App.js";
 
 // describe("Sumar", () => {
 //   it("deberia sumar dos numeros", () => {
@@ -20,10 +21,14 @@ import multiplicar from "./App.js";
 //   });
 // });
 describe("Calcular Total", () =>{
-  it("deberia darnos el total incorrecto", () => {
-    expect(calcularTotal(3, 8)).toEqual(2);
+  // it("deberia darnos el total incorrecto", () => {
+  //   expect(calcularTotal(3, 8)).toEqual(2);
+  // });
+  // it("deberia darnos el total correcto", () => {
+  //   expect(calcularTotal(3, 8)).toEqual(24);
+  // });
+  it("deberia darnos el total incorrecto con Estado", () => {
+    expect(calcularTotalConEstado(3, 8, "AL")).toEqual(5);
   });
-  it("deberia darnos el total correcto", () => {
-    expect(calcularTotal(3, 8)).toEqual(24);
-  });
+
 });
