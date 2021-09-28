@@ -1,15 +1,15 @@
-import sumar from "./App";
+import calcularTotal from "./App";
 
-const first = document.querySelector("#first-number");
-const second = document.querySelector("#second-number");
-const form = document.querySelector("#sumar-form");
+const quantity = document.querySelector("#quantity-number");
+const price = document.querySelector("#price-number");
+const form = document.querySelector("#calcular-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const cantidad = Number.parseInt(quantity.value);
+  const precio = Number.parseInt(price.value);
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + calcularTotal(cantidad, precio) + "</p>";
 });
