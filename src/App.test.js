@@ -30,5 +30,7 @@ describe("Calcular Total", () =>{
   it("deberia darnos el total incorrecto con Estado", () => {
     expect(calcularTotalConEstado(3, 8, "AL")).toEqual(5);
   });
-
+  it("deberia darnos el total incorrecto con Estado", () => {
+    expect(calcularTotalConEstado(3, 8, "AL")).toEqual(23.04);
+  });
 });
